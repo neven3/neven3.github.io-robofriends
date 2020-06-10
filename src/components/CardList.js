@@ -10,9 +10,12 @@ const CardList = ({ robots }) => {
                 name={robot.name} 
                 username={robot.username} 
                 email={robot.email} 
-            />);
-    });
-
+                />);
+            });
+            
+    if (true) {
+        throw new Error('Noooo!');
+    }
     return (
         <main>
             {cardComponent}
